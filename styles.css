@@ -1,0 +1,9 @@
+@font-face {
+    font-family: nytFont;
+    src: url(Chomsky.woff);
+}
+
+h1{
+    font-family: nytFont;
+    word-spacing: 10px;
+}

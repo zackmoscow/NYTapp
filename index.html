@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3a620b4bd5.js" crossorigin="anonymous"></script>
+
+    <title>New York Times Search</title>
+  </head>
+
+  <body>
+    
+    <header class="jumbotron">
+      <h1 class="display-3 text-center"><i class="far fa-newspaper"></i>     New York Times Search</h1>
+    </header> 
+
+    <div class="container border border-dark" id="search">
+        <div class="row bg-dark p-2"> 
+            <div class="col-lg">
+                <h5 class="text-white pt-2"><i class="far fa-keyboard"></i> Search Parameters</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <form class="ml-2 mt-2 mr-2">
+                    <div class="form-row">
+                        <label for="search">Search Term:</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Search">   
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label for="records">Number of Records to Retrieve:</label>
+                        <select id="records1" class="form-control col-lg-12">
+                            <option value="1">1</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label for="startyear">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="startyear">
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label for="endyear">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="endyear">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="search" class="btn btn-secondary"><i class="fas fa-search"></i> Search</button>
+                        <button type="search" class="btn btn-secondary"><i class="far fa-trash-alt"></i> Clear Results</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container border border-dark" id="search">
+        <div class="row bg-dark p-2"> 
+            <div class="col-lg">
+                <h5 class="text-white pt-2"><i class="fas fa-th"></i> Top Articles</h5>
+            </div>
+        </div>
+       
+        <div class=RESULTSHERE>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>
