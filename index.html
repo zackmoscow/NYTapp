@@ -31,12 +31,12 @@
                 <form class="ml-2 mt-2 mr-2">
                     <div class="form-row">
                         <label for="search">Search Term:</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="Search">   
+                        <input type="text" class="form-control" id="searchTermInput" placeholder="Search">   
                     </div>
                     <br>
                     <div class="form-row">
                         <label for="records">Number of Records to Retrieve:</label>
-                        <select id="records1" class="form-control col-lg-12">
+                        <select id="numberOfRecordsInput" class="form-control col-lg-12">
                             <option value="1">1</option>
                             <option value="5">5</option>
                             <option value="10">10</option>
@@ -45,17 +45,17 @@
                     <br>
                     <div class="form-row">
                         <label for="startyear">Start Year (Optional):</label>
-                        <input type="text" class="form-control" id="startyear">
+                        <input type="text" class="form-control" id="startYearInput">
                     </div>
                     <br>
                     <div class="form-row">
                         <label for="endyear">End Year (Optional):</label>
-                        <input type="text" class="form-control" id="endyear">
+                        <input type="text" class="form-control" id="endYearInput">
                     </div>
                     <br>
                     <div class="form-group">
-                        <button type="search" class="btn btn-secondary"><i class="fas fa-search"></i> Search</button>
-                        <button type="search" class="btn btn-secondary"><i class="far fa-trash-alt"></i> Clear Results</button>
+                        <button type="search" class="btn btn-secondary" id="searchButton"><i class="fas fa-search"></i> Search</button>
+                        <button type="search" class="btn btn-secondary" id="clearResults"><i class="far fa-trash-alt"></i> Clear Results</button>
                     </div>
                 </form>
             </div>
@@ -69,7 +69,7 @@
             </div>
         </div>
        
-        <div class=RESULTSHERE>
+        <div id="results">
         </div>
     </div>
     
